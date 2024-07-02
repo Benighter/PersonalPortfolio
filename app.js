@@ -155,13 +155,28 @@ document.addEventListener('DOMContentLoaded', function() {
     downloadButton.addEventListener('click', function(e) {
         e.preventDefault();
         if (confirm('Do you want to download the resume?')) {
-            // Create a temporary anchor element
-            var link = document.createElement('a');
-            link.href = this.href;
-            link.download = 'Bennet_Nkolele_Resume.pdf'; // You can set the desired file name here
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            fetch(this.href)
+                .then(response => {
+                    if (response.ok) {
+                        return response.blob();
+                    } else {
+                        throw new Error('Resume file not found');
+                    }
+                })
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'Bennet_Nkolele_Resume.pdf';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(error => {
+                    console.error('Error downloading resume:', error);
+                    alert('Sorry, the resume file could not be downloaded. Please try again later or contact me directly.');
+                });
         }
     });
 });
