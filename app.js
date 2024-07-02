@@ -154,7 +154,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     downloadButton.addEventListener('click', function(e) {
         e.preventDefault();
-        alert('Thank you for your interest! The resume is downloading.');
-        window.location.href = this.href;
+        if (confirm('Do you want to download the resume?')) {
+            // Create a temporary anchor element
+            var link = document.createElement('a');
+            link.href = this.href;
+            link.download = 'Bennet_Nkolele_Resume.pdf'; // You can set the desired file name here
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     });
 });
