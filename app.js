@@ -234,15 +234,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Animate skill progress and percentage on hover
         item.addEventListener('mouseenter', () => {
-            progressBar.style.transition = 'width 0.5s ease-in-out';
             progressBar.style.width = `${skillPercentage}%`;
+            progressBar.style.opacity = '1';
+            progressBar.style.visibility = 'visible';
             animateValue(percentageDisplay, 0, skillPercentage, 500);
         });
 
         // Reset progress bar and display original percentage when not hovering
         item.addEventListener('mouseleave', () => {
-            progressBar.style.transition = 'width 0.3s ease-in-out';
             progressBar.style.width = '0%';
+            progressBar.style.opacity = '0';
+            progressBar.style.visibility = 'hidden';
             percentageDisplay.innerHTML = `${skillPercentage}%`;
         });
 
@@ -268,6 +270,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Animate the progress bar and percentage
         setTimeout(() => {
             modalProgress.style.width = `${percentage}%`;
+            modalProgress.style.opacity = '1';
+            modalProgress.style.visibility = 'visible';
             animateValue(modalPercentage, 0, percentage, 1000);
         }, 100);
     }
@@ -277,6 +281,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Reset modal progress bar when closing
         const modalProgress = document.querySelector('.modal-skill-progress');
         modalProgress.style.width = '0%';
+        modalProgress.style.opacity = '0';
+        modalProgress.style.visibility = 'hidden';
     }
 
     closeModal.addEventListener('click', closeModalHandler);

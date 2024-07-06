@@ -77,21 +77,32 @@
 }
 
 .skill-bar {
-  width: 80%;
-  height: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.skill-progress {
-  width: 0;
-  height: 100%;
-  background-color: #2ecc71;
-  transition: width 1s ease-in-out;
-}
-
+	width: 80%;
+	height: 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	position: relative;
+  }
+  
+  .skill-progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background-color: #2ecc71;
+	transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+  }
+  
+  .skill-item:hover .skill-progress {
+	opacity: 1;
+	visibility: visible;
+  }
+  
 .read-more-btn {
   background-color: transparent;
   border: 2px solid white;
