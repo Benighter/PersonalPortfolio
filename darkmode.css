@@ -1,0 +1,326 @@
+/* Comprehensive Dark Mode Styles */
+
+/* Global Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Header and Navigation */
+  .dark-mode #header .header {
+    background-color: rgba(18, 18, 18, 0.8);
+  }
+  
+  .dark-mode .brand h1,
+  .dark-mode .brand h1 span,
+  .dark-mode .nav-list ul li a {
+    color: #ffffff;
+  }
+  
+  .dark-mode .hamburger .bar {
+    background-color: #ffffff;
+  }
+  
+  .dark-mode .nav-list ul {
+    background-color: rgba(18, 18, 18, 0.9);
+  }
+  
+  /* Hero Section */
+  .dark-mode #hero::after {
+    background-color: rgba(18, 18, 18, 0.7);
+  }
+  
+  .dark-mode #hero h1,
+  .dark-mode #hero h1 span {
+    color: #ffffff;
+  }
+  
+  /* Section Titles */
+  .dark-mode .section-title,
+  .dark-mode .section-title span {
+    color: #ffffff;
+  }
+  
+  /* Services Section */
+.dark-mode #services .service-item {
+    background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+  }
+  
+  .dark-mode #services .service-item h2,
+  .dark-mode #services .service-item p,
+  .dark-mode #services .services-description {
+    color: #ffffff;
+  }
+  
+  .dark-mode #services .icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark-mode #services .icon i {
+    color: #ffffff;
+  }
+  
+  /* Hover effect for service items in dark mode */
+  .dark-mode #services .service-item:hover .icon {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .dark-mode #services .service-item:hover .icon i {
+    color: #ffd700;
+  }
+  /* Projects Section */
+  .dark-mode .project-info {
+    background: linear-gradient(to top, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.4));
+  }
+  
+  .dark-mode .project-info h2,
+  .dark-mode .project-info p {
+    color: #ffffff;
+  }
+  
+  .dark-mode .view-more {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  .dark-mode .view-more:hover {
+    background-color: #ffffff;
+    color: #121212;
+  }
+  
+  /* Skills Section */
+  .dark-mode #skills .skill-item {
+    background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+  }
+  
+  .dark-mode #skills .skill-item h2,
+  .dark-mode #skills .skill-percentage,
+  .dark-mode #skills .read-more-btn {
+    color: #ffffff;
+  }
+  
+  .dark-mode .skill-bar {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .dark-mode .skill-progress {
+    background-color: #ffffff;
+  }
+  
+  /* Skill Modal */
+  .dark-mode .skill-modal-content {
+    background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+    color: #ffffff;
+  }
+  
+  .dark-mode .close-modal {
+    color: #ffffff;
+  }
+  
+  .dark-mode #modal-skill-title,
+  .dark-mode .modal-skill-percentage,
+  .dark-mode #modal-skill-description {
+    color: #ffffff;
+  }
+  
+  .dark-mode .modal-skill-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark-mode .modal-skill-progress {
+    background-color: #ffffff;
+  }
+  
+  /* About Section */
+  .dark-mode #about .col-right h1,
+  .dark-mode #about .col-right h2,
+  .dark-mode #about .col-right p {
+    color: #ffffff;
+  }
+  
+  .dark-mode #about .cta {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  .dark-mode #about .cta:hover {
+    background-color: #ffffff;
+    color: #121212;
+  }
+  
+  /* Contact Section */
+  .dark-mode #contact .contact-item {
+    background-color: #1a1a1a;
+    box-shadow: 0px 0px 18px 0 #ffffff1a;
+  }
+  
+  .dark-mode #contact .contact-info h1,
+  .dark-mode #contact .contact-info h2 {
+    color: #ffffff;
+  }
+  
+ /* Footer Styles */
+
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding: 50px 0;
+    color: #ffffff;
+  }
+  
+  #footer .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #footer .brand {
+    margin-bottom: 30px;
+  }
+  
+  #footer .brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  #footer .brand h1 span {
+    color: crimson;
+  }
+  
+  #footer h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  #footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  #footer .social-item img {
+    height: 100%;
+    width: 100%;
+    transition: filter 0.3s ease;
+  }
+  
+  #footer .social-item:hover {
+    transform: scale(1.1);
+  }
+  
+  #footer .social-item:hover img {
+    filter: brightness(1.2);
+  }
+  
+  #footer p {
+    font-size: 1.3rem;
+  }
+  
+  /* Dark mode specific styles */
+  .dark-mode #footer {
+    background-image: linear-gradient(60deg, #1a1a1a 0%, #2c3e50 100%);
+  }
+  
+  .dark-mode #footer .brand h1,
+  .dark-mode #footer h2,
+  .dark-mode #footer p {
+    color: #ffffff;
+  }
+  
+  .dark-mode #footer .brand h1 span {
+    color: #ff6b6b; /* A slightly lighter shade of crimson for better visibility in dark mode */
+  }
+  
+  /* Media Query for Tablet and Smaller Screens */
+  @media screen and (max-width: 768px) {
+    #footer .footer {
+      padding: 0 20px;
+    }
+  
+    #footer .brand h1 {
+      font-size: 2.5rem;
+    }
+  
+    #footer h2 {
+      font-size: 1.5rem;
+    }
+  
+    #footer p {
+      font-size: 1.1rem;
+    }
+  
+    #footer .social-item {
+      height: 40px;
+      width: 40px;
+      margin: 0 8px;
+    }
+  }
+  
+  /* Media Query for Mobile Screens */
+  @media screen and (max-width: 480px) {
+    #footer .brand h1 {
+      font-size: 2rem;
+    }
+  
+    #footer h2 {
+      font-size: 1.3rem;
+    }
+  
+    #footer p {
+      font-size: 1rem;
+    }
+  
+    #footer .social-item {
+      height: 35px;
+      width: 35px;
+      margin: 0 6px;
+    }
+  }
+  
+  /* Dark Mode Toggle */
+  .dark-mode #darkModeToggle {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .dark-mode #darkModeToggle:hover {
+    color: #ffd700;
+  }
+  
+  /* Navigation Buttons (for carousels) */
+  .dark-mode .nav-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+  
+  .dark-mode .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Additional adjustments for any missed elements */
+  .dark-mode a {
+    color: #4e7eff;
+  }
+  
+  .dark-mode a:hover {
+    color: #ffd700;
+  }

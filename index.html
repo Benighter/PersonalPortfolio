@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="darkmode.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="icon" href="img/portfolio.png">
   <title>My Portfolio</title>
@@ -29,6 +30,9 @@
             <li><a href="#skills" data-after="Skills">Skills</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><button id="darkModeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -86,7 +90,7 @@
 <section id="projects">
   <div class="projects container">
     <div class="projects-header">
-      <h1 class="section-title">Recent <span>Projects</span></h1>
+      <h1 class="section-title" style="font-weight: bold;">Recent <span>Projects</span></h1>
     </div>
     <div class="projects-carousel">
       <button class="nav-button prev">&lt;</button>
@@ -181,7 +185,9 @@
       </div>
       <button class="nav-button next">&gt;</button>
     </div>
+    
   </div>
+  
 </section>
   <!-- End Projects Section -->
 
