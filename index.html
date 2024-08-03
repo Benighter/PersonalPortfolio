@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="darkmode.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="icon" href="img/portfolio.png">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
   <title>My Portfolio</title>
 </head>
 <body>
@@ -30,9 +31,7 @@
             <li><a href="#skills" data-after="Skills">Skills</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
-            <li><button id="darkModeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i>
-              </button>
-            </li>
+            <li><button id="darkModeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
           </ul>
         </div>
       </div>
@@ -49,6 +48,13 @@
         <h1>Bennet <span></span></h1>
         <a href="#projects" type="button" class="cta" style="font-weight: bold;">Projects</a>
       </div>
+    </div>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
   </section>
   <!-- End Hero Section  -->
@@ -93,7 +99,7 @@
       <h1 class="section-title" style="font-weight: bold;">Recent <span>Projects</span></h1>
     </div>
     <div class="projects-carousel">
-      <button class="nav-button prev">&lt;</button>
+      <button class="nav-button prev"></button>
       <div class="carousel-container">
         <div class="project-item">
           <div class="project-img" style="background-image: url('./img/AI Detect.png');"></div>
@@ -193,7 +199,7 @@
           </div>
         </div>
       </div>
-      <button class="nav-button next">&gt;</button>
+      <button class="nav-button next"></button>
     </div>
   </div>
 </section>
@@ -206,34 +212,8 @@
       <h1 class="section-title" style="font-weight: bold;">My <span>Skills</span></h1>
     </div>
     <div class="skills-carousel">
-      <button class="nav-button prev">&lt;</button>
+      <button class="nav-button prev"></button>
       <div class="carousel-container">
-        <div class="skill-item" data-skill="Python" data-percentage="93">
-          <div class="skill-info">
-            <div class="skill-icon">
-              <i class="fab fa-python"></i>
-            </div>
-            <h2>Python</h2>
-            <div class="skill-percentage">93%</div>
-            <div class="skill-bar">
-              <div class="skill-progress"></div>
-            </div>
-            <button class="read-more-btn">Read More</button>
-          </div>
-        </div>
-        <div class="skill-item" data-skill="JavaScript" data-percentage="89">
-          <div class="skill-info">
-            <div class="skill-icon">
-              <i class="fab fa-js-square"></i>
-            </div>
-            <h2>JavaScript</h2>
-            <div class="skill-percentage">89%</div>
-            <div class="skill-bar">
-              <div class="skill-progress"></div>
-            </div>
-            <button class="read-more-btn">Read More</button>
-          </div>
-        </div>
         <div class="skill-item" data-skill="Web Development" data-percentage="95">
           <div class="skill-info">
             <div class="skill-icon">
@@ -254,6 +234,33 @@
             </div>
             <h2>Full-stack Development</h2>
             <div class="skill-percentage">91%</div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+        </div>
+        <div class="skill-item" data-skill="JavaScript" data-percentage="89">
+          <div class="skill-info">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h2>JavaScript</h2>
+            <div class="skill-percentage">89%</div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+        </div>
+        <!-- More skill items here -->
+        <div class="skill-item" data-skill="Python" data-percentage="93">
+          <div class="skill-info">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h2>Python</h2>
+            <div class="skill-percentage">93%</div>
             <div class="skill-bar">
               <div class="skill-progress"></div>
             </div>
@@ -287,7 +294,7 @@
           </div>
         </div>
       </div>
-      <button class="nav-button next">&gt;</button>
+      <button class="nav-button next"></button>
     </div>
   </div>
 </section>
@@ -295,7 +302,7 @@
 <!-- Skill Modal -->
 <div class="skill-modal">
   <div class="skill-modal-content">
-    <span class="close-modal">&times;</span>
+    <span class="close-modal">×</span>
     <h2 id="modal-skill-title"></h2>
     <div class="modal-skill-percentage"></div>
     <div class="modal-skill-bar">
@@ -305,7 +312,6 @@
   </div>
 </div>
 <!-- End Skills Section -->
-
 
   <!-- About Section -->
   <section id="about">
