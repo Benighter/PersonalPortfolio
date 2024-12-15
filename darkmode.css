@@ -324,3 +324,11 @@ body.dark-mode {
   .dark-mode a:hover {
     color: #ffd700;
   }
+
+.fa-moon {
+  cursor: pointer;
+}
+
+.fa-moon:hover {
+  color: #ffd700;
+}

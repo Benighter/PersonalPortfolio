@@ -199,14 +199,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getSkillDescription(skillName) {
         const descriptions = {
-            'Python': 'Advanced proficiency in Python for various applications including data analysis, web development, and automation. Experienced with libraries such as NumPy, Pandas, and TensorFlow.',
-            'JavaScript': 'Expert in both client-side and server-side JavaScript programming, including modern ES6+ features. Skilled in frameworks like React, Vue.js, and Node.js.',
-            'Web Development': 'Comprehensive knowledge of HTML5, CSS3, and various front-end frameworks for creating responsive and interactive web applications. Proficient in modern web development practices and tools.',
-            'Full-stack Development': 'Expertise in building end-to-end web applications using technologies like MERN (MongoDB, Express.js, React, Node.js) stack. Experienced in RESTful API design and implementation.',
-            'Teaching': 'TEFL certified for English language instruction. Experienced in curriculum development, lesson planning, and both online and in-person teaching methodologies.',
-            'Blender': 'Proficient in 3D modeling, texturing, rigging, animation, and rendering using Blender. Experienced in creating assets for games, architectural visualization, and 3D printing. Familiar with both Eevee and Cycles rendering engines.'
+            'Angular': 'Angular is a powerful TypeScript-based framework for building scalable single-page applications. It provides robust dependency injection, comprehensive routing, form handling, and seamless integration with other web technologies.',
+            'Typescript': 'TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It adds optional types, classes, and modules, enabling developers to write more robust and maintainable code with enhanced IDE support.',
+            'Git': 'Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It allows collaborative development, branching strategies, and comprehensive code history tracking.',
+            'Python': 'Python is a versatile, high-level programming language known for its readability and wide-ranging applications. It excels in web development, data science, machine learning, automation, and scientific computing.',
+            'Teaching': 'Teaching involves effectively communicating complex technical concepts, designing engaging learning experiences, and mentoring individuals to develop their skills and understanding in various domains.'
         };
-        return descriptions[skillName] || 'Skill description not available.';
+        return descriptions[skillName] || 'No detailed description available.';
     }
 
     function animateValue(obj, start, end, duration) {
